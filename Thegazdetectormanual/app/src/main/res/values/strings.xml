@@ -1,0 +1,493 @@
+<resources>
+    <string name="app_name">The gaz detector manual</string>
+    <string name="manual_content_english">Gas Detector User Manual
+
+Introduction:
+The gas detector is designed to detect combustible gases and emit visual and auditory warnings, send alert messages via SMS, and activate automatic ventilation. This user manual will guide you through the necessary steps to effectively use this device.
+
+Power Supply:
+- Use a 12 to 15V power supply to power the Arduino.
+
+Daily Use:
+1. Powering On the Device
+   Connect the power supply to the Arduino and turn it on.
+
+2. Air Quality Monitoring
+   1. The MQ2 sensor continuously detects the concentration of gas in the air.
+   2. The LCD screen displays the current gas concentration.
+
+Calibration:
+- The gas detector may require periodic calibration to ensure accurate readings.
+- To calibrate the device, expose it to fresh air or a known gas concentration and adjust the sensitivity accordingly.
+
+Gas Detection Formula:
+- The gas detection formula used by the device is based on the resistance of the MQ2 sensor.
+- Resistance = (Vin - Vout) / Vout
+- Where Vin is the input voltage and Vout is the output voltage from the sensor.
+- The device uses a pre-defined threshold value to determine if the detected gas concentration is above the safe limit.
+- Adjustments to the threshold value may be necessary depending on environmental conditions and gas types.
+
+Warnings:
+- Visual Warning: The LED lights up when gas is detected above the predefined threshold.
+- Auditory Warning: The buzzer emits a sound when gas is detected above the predefined threshold.
+- SMS Message: An alert SMS is sent to the configured number when dangerous gas is detected.
+- Ventilation: The fan activates automatically to reduce gas concentration.
+
+Configuring Phone Number:
+- Press key A: to enter the phone number or to modify it.
+- Use the keypad to input the phone number digits.
+- Press key C: to display and verify the entered phone number.
+- Press key D: to start gas detection.
+
+Emergency Stop Button:
+Press the emergency stop button to immediately deactivate all alerts (visual, auditory) and ventilation.
+</string>
+    <string name="manual_content_arabic">
+        دليل مستخدم جهاز كاشف الغازات
+
+مقدمة:
+تم تصميم جهاز كاشف الغازات لاكتشاف الغازات القابلة للاشتعال وإصدار تحذيرات بصرية وسمعية، وإرسال رسائل تنبيه عبر الرسائل القصيرة، وتنشيط التهوية التلقائية. سيقوم هذا الدليل بتوجيهك خلال الخطوات اللازمة لاستخدام هذا الجهاز بكفاءة.
+
+مصدر الطاقة:
+- استخدم مصدر طاقة بجهد 12 إلى 15 فولت لتشغيل الأردوينو.
+
+الاستخدام اليومي:
+1. تشغيل الجهاز
+   قم بتوصيل مصدر الطاقة بالأردوينو وقم بتشغيله.
+2. مراقبة جودة الهواء
+   1. يكتشف مستشعر MQ2 تركيز الغاز في الهواء بشكل مستمر.
+   2. يعرض شاشة الكريستال السائل الغاز الحالي.
+
+المعايرة:
+- قد يتطلب كاشف الغاز معايرة دورية لضمان قراءات دقيقة.
+- لمعايرة الجهاز، قم بتعريضه لهواء نقي أو تركيز غاز معروف وضبط الحساسية وفقًا لذلك.
+
+صيغة كشف الغاز:
+- تعتمد صيغة كشف الغاز المستخدمة في الجهاز على مقاومة مستشعر MQ2.
+- المقاومة = (فين - فاوت) / فاوت
+- حيث فين هو الجهد المدخل وفاوت هو الجهد المخرج من المستشعر.
+- يستخدم الجهاز قيمة عتبة محددة مسبقًا لتحديد ما إذا كان تركيز الغاز المكتشف أعلى من الحد الآمن.
+- قد تكون التعديلات على قيمة العتبة ضرورية اعتمادًا على الظروف البيئية وأنواع الغاز.
+
+تحذيرات:
+- تحذير بصري: يضيء الصمام الضوئي عندما يتم اكتشاف الغاز فوق العتبة المحددة مسبقًا.
+- تحذير سمعي: يصدر الجرس صوتًا عندما يتم اكتشاف الغاز فوق العتبة المحددة مسبقًا.
+- رسالة SMS: يتم إرسال رسالة تنبيه إلى الرقم المكون مسبقًا عندما يتم اكتشاف غاز خطير.
+- التهوية: يتم تنشيط المروحة تلقائيًا لتقليل تركيز الغاز.
+
+تكوين رقم الهاتف:
+- اضغط على الزر A: لإدخال رقم الهاتف أو تعديله.
+- استخدم لوحة المفاتيح لإدخال أرقام رقم الهاتف.
+التحقق من رقم الهاتف المدخل.
+- اضغط على الزر D: لبدء كشف الغاز.
+
+زر التوقف الطارئ:
+اضغط على زر التوقف الطارئ لإيقاف جميع التنبيهات (البصرية، السمعية) والتهوية على الفور.
+- اضغط على الزر C: لعرض و
+
+</string>
+    <string name="manual_content_french">"Manuel de l'utilisateur du détecteur de gaz
+
+Introduction :
+Le détecteur de gaz est conçu pour détecter les gaz combustibles et émettre des avertissements visuels et sonores, envoyer des messages d'alerte par SMS et activer la ventilation automatique. Ce manuel de l'utilisateur vous guidera à travers les étapes nécessaires pour utiliser efficacement ce dispositif.
+
+Alimentation :
+- Utilisez une alimentation de 12 à 15V pour alimenter l'Arduino.
+
+Utilisation quotidienne :
+1. Mise en marche de l'appareil
+   Connectez l'alimentation à l'Arduino et mettez-le en marche.
+
+2. Surveillance de la qualité de l'air
+   1. Le capteur MQ2 détecte en continu la concentration de gaz dans l'air.
+   2. L'écran LCD affiche la concentration actuelle de gaz.
+
+Calibration :
+- Le détecteur de gaz peut nécessiter une calibration périodique pour garantir des lectures précises.
+- Pour calibrer l'appareil, exposez-le à de l'air frais ou à une concentration de gaz connue et ajustez la sensibilité en conséquence.
+
+Formule de détection de gaz :
+- La formule de détection de gaz utilisée par l'appareil est basée sur la résistance du capteur MQ2.
+- Résistance = (Vin - Vout) / Vout
+- Où Vin est la tension d'entrée et Vout est la tension de sortie du capteur.
+- L'appareil utilise une valeur seuil prédéfinie pour déterminer si la concentration de gaz détectée est supérieure à la limite de sécurité.
+- Des ajustements de la valeur seuil peuvent être nécessaires en fonction des conditions environnementales et des types de gaz.
+
+Avertissements :
+- Avertissement visuel : La LED s'allume lorsque le gaz est détecté au-dessus du seuil prédéfini.
+- Avertissement sonore : Le buzzer émet un son lorsque le gaz est détecté au-dessus du seuil prédéfini.
+- Message SMS : Un SMS d'alerte est envoyé au numéro configuré lorsque du gaz dangereux est détecté.
+- Ventilation : Le ventilateur s'active automatiquement pour réduire la concentration de gaz.
+
+Configuration du numéro de téléphone :
+- Appuyez sur la touche A : pour entrer le numéro de téléphone ou le modifier.
+- Utilisez le clavier pour saisir les chiffres du numéro de téléphone.
+- Appuyez sur la touche C : pour afficher et vérifier le numéro de téléphone saisi.
+- Appuyez sur la touche D : pour démarrer la détection de gaz.
+
+Bouton d'arrêt d'urgence :
+Appuyez sur le bouton d'arrêt d'urgence pour désactiver immédiatement tous les avertissements (visuels, sonores) et la ventilation."
+
+</string>
+    <string name="odd_english">"
+ Let's explore some key aspects related to your gas detector project and delve deeper into their significance, goals, and implications:
+
+1. **Environmental Monitoring:**
+   - Explanation: Gas detectors serve the crucial purpose of monitoring the environment for the presence of potentially harmful gases. They continuously analyze air quality to detect combustible gases, providing early warnings in case of gas leaks or hazardous conditions.
+   - Goals: The primary goal is to ensure the safety of individuals and properties by detecting and alerting users to the presence of dangerous gases, thereby preventing accidents and minimizing the risk of fire or explosions.
+
+2. **Safety and Risk Mitigation:**
+   - Explanation: Gas detectors play a critical role in risk mitigation by alerting users to potentially hazardous situations, allowing for timely evacuation or intervention to prevent accidents and injuries.
+   - Goals: The overarching goal is to safeguard lives, properties, and the environment by providing reliable and accurate detection of combustible gases, thereby reducing the likelihood of accidents and mitigating their consequences.
+
+3. **Energy Efficiency and Conservation:**
+   - Explanation: Gas detectors contribute to energy efficiency and conservation efforts by promoting the safe use and management of energy resources. By detecting gas leaks and preventing wastage, they help minimize energy losses and reduce environmental impact.
+   - Goals: The aim is to promote responsible energy consumption practices and reduce greenhouse gas emissions associated with energy production and usage, thus contributing to environmental sustainability and combating climate change.
+
+4. **Technological Innovation:**
+   - Explanation: Gas detector technology continues to evolve with advancements in sensor technology, data analytics, and connectivity. Modern gas detectors feature sophisticated sensors, real-time monitoring capabilities, and wireless connectivity for remote monitoring and control.
+   - Goals: The objective is to foster innovation in gas detection technology, enabling the development of more efficient, reliable, and user-friendly devices. By embracing technological advancements, the goal is to enhance safety, efficiency, and convenience in gas detection applications.
+
+5. **Regulatory Compliance and Standards:**
+   - Explanation: Gas detectors must comply with regulatory standards and industry guidelines to ensure their effectiveness and reliability. Standards such as those set by organizations like the Occupational Safety and Health Administration (OSHA) and the International Electrotechnical Commission (IEC) outline requirements for gas detection equipment.
+   - Goals: The goal is to ensure that gas detectors meet or exceed regulatory requirements, providing users with confidence in their performance and accuracy. Compliance with standards helps promote consistency, interoperability, and safety in gas detection practices.
+
+These aspects highlight the multifaceted nature of gas detection projects, encompassing safety, environmental protection, energy efficiency, innovation, and regulatory compliance. By addressing these key considerations, gas detector projects aim to enhance safety, protect the environment, and promote sustainable practices in various industries and applications.
+    "</string>
+    <string name="odd_french">"
+ Explorons quelques aspects clés liés à votre projet de détecteur de gaz et approfondissons leur signification, leurs objectifs et leurs implications :
+
+1. **Surveillance environnementale :**
+   - Explication : Les détecteurs de gaz ont pour objectif crucial de surveiller l'environnement afin de détecter la présence de gaz potentiellement dangereux. Ils analysent en continu la qualité de l'air pour détecter les gaz combustibles, fournissant des avertissements précoces en cas de fuite de gaz ou de conditions dangereuses.
+   - Objectifs : L'objectif principal est d'assurer la sécurité des individus et des biens en détectant et en alertant les utilisateurs de la présence de gaz dangereux, réduisant ainsi le risque d'accidents et de minimiser le risque d'incendie ou d'explosion.
+
+2. **Sécurité et atténuation des risques :**
+   - Explication : Les détecteurs de gaz jouent un rôle critique dans l'atténuation des risques en alertant les utilisateurs des situations potentiellement dangereuses, permettant une évacuation ou une intervention rapide pour prévenir les accidents et les blessures.
+   - Objectifs : L'objectif principal est de protéger les vies, les biens et l'environnement en fournissant une détection fiable et précise des gaz combustibles, réduisant ainsi la probabilité d'accidents et atténuant leurs conséquences.
+
+3. **Efficacité énergétique et conservation :**
+   - Explication : Les détecteurs de gaz contribuent à l'efficacité énergétique et aux efforts de conservation en promouvant l'utilisation sûre et la gestion des ressources énergétiques. En détectant les fuites de gaz et en prévenant le gaspillage, ils contribuent à minimiser les pertes d'énergie et à réduire l'impact environnemental.
+   - Objectifs : L'objectif est de promouvoir des pratiques de consommation d'énergie responsables et de réduire les émissions de gaz à effet de serre associées à la production et à l'utilisation d'énergie, contribuant ainsi à la durabilité environnementale et à la lutte contre le changement climatique.
+
+4. **Innovation technologique :**
+   - Explication : La technologie des détecteurs de gaz continue d'évoluer avec les avancées en matière de technologie des capteurs, d'analyse des données et de connectivité. Les détecteurs de gaz modernes sont dotés de capteurs sophistiqués, de capacités de surveillance en temps réel et de connectivité sans fil pour une surveillance et un contrôle à distance.
+   - Objectifs : L'objectif est de favoriser l'innovation dans la technologie de détection de gaz, permettant le développement de dispositifs plus efficaces, fiables et conviviaux. En adoptant les avancées technologiques, l'objectif est d'améliorer la sécurité, l'efficacité et la commodité dans les applications de détection de gaz.
+
+5. **Conformité réglementaire et normes :**
+   - Explication : Les détecteurs de gaz doivent se conformer aux normes réglementaires et aux directives de l'industrie pour garantir leur efficacité et leur fiabilité. Des normes telles que celles établies par des organisations comme l'Administration de la sécurité et de la santé au travail (OSHA) et la Commission électrotechnique internationale (CEI) définissent les exigences pour les équipements de détection de gaz.
+   - Objectifs : L'objectif est de veiller à ce que les détecteurs de gaz respectent ou dépassent les exigences réglementaires, offrant aux utilisateurs une confiance dans leurs performances et leur précision. La conformité aux normes contribue à promouvoir la cohérence, l'interopérabilité et la sécurité dans les pratiques de détection de gaz.
+
+Ces aspects mettent en lumière la nature multifacette des projets de détection de gaz, englobant la sécurité, la protection de l'environnement, l'efficacité énergétique, l'innovation et la conformité réglementaire. En abordant ces considérations clés, les projets de détecteurs de gaz visent à améliorer la sécurité, à protéger l'environnement et à promouvoir des pratiques durables dans diverses industries et applications.
+
+        "
+    </string>
+    <string name="odd_arabic">"
+ دعنا نستكشف بعض الجوانب الرئيسية المتعلقة بمشروع جهاز كاشف الغاز الخاص بك ونتعمق في معناها وأهدافها وآثارها:
+
+1. **مراقبة البيئة:**
+   - التفسير: يلعب كاشف الغاز دورًا حاسمًا في مراقبة البيئة للكشف عن وجود الغازات الضارة بالإمكان. يحللون جودة الهواء بشكل مستمر لكشف الغازات القابلة للاشتعال، مما يوفر تحذيرات مبكرة في حالة تسرب الغاز أو الظروف الخطرة.
+   - الأهداف: الهدف الرئيسي هو ضمان سلامة الأفراد والممتلكات من خلال الكشف عن وتنبيه المستخدمين إلى وجود الغازات الخطرة، مما يقلل من احتمالية الحوادث ويقلل من مخاطر الحرائق أو الانفجارات.
+
+2. **السلامة وتخفيف المخاطر:**
+   - التفسير: يلعب كاشف الغاز دورًا حاسمًا في تخفيف المخاطر من خلال تنبيه المستخدمين إلى الحالات الخطرة بالإمكان، مما يسمح بالإجلاء أو التدخل في الوقت المناسب لمنع الحوادث والإصابات.
+   - الأهداف: الهدف الرئيسي هو حماية الأرواح والممتلكات والبيئة من خلال توفير كشف موثوق ودقيق للغازات القابلة للاشتعال، مما يقلل من احتمالية الحوادث ويخفف من تداعياتها.
+
+3. **الكفاءة الطاقية والحفاظ على الطاقة:**
+   - التفسير: يساهم كاشف الغاز في الكفاءة الطاقية وجهود الحفاظ على الطاقة من خلال تعزيز الاستخدام الآمن وإدارة موارد الطاقة. من خلال كشف تسربات الغاز ومنع الهدر، يساعدون في تقليل الخسائر الطاقية والحد من التأثير البيئي.
+   - الأهداف: الهدف هو تعزيز الممارسات المسؤولة لاستهلاك الطاقة وتقليل انبعاثات غازات الدفيئة المرتبطة بإنتاج الطاقة واستخدامها، مما يساهم في الاستدامة البيئية ومكافحة التغير المناخي.
+
+4. **الابتكار التكنولوجي:**
+   - التفسير: تستمر تقنية كاشفات الغاز في التطور مع التقدم في تقنية الاستشعار وتحليل البيانات والاتصالات. تتميز كاشفات الغاز الحديثة بمستشعرات متطورة وقدرات مراقبة في الوقت الحقيقي واتصال لاسلكي للمراقبة والتحكم عن بعد.
+   - الأهداف: الهدف هو تعزيز الابتكار في تقنية كشف الغاز، مما يمكن من تطوير أجهزة أكثر كفاءة وموثوقية وسهولة استخدامًا. من خلال اعتماد التطورات التكنولوجية، الهدف هو تعزيز السلامة والكفاءة والراحة في تطبيقات كشف الغاز.
+
+5. **الامتثال التنظيمي والمعايير:**
+   - التفسير: يجب أن تتوافق كاشفات الغاز مع المعايير التنظيمية والإرشادات الصناعية لضمان ف
+        "</string>
+
+    <string name="source_code">
+        <![CDATA["
+        #include &lt;SoftwareSerial.h&gt;
+        #include &lt;Keypad.h&gt;
+        #include &lt;Wire.h&gt;
+        #include &lt;LiquidCrystal_I2C.h&gt;
+        #include &lt;EEPROM.h&gt;
+        
+        // Define the TX and RX pins for the SIM808 module
+        #define SIM808_TX_PIN 12
+        #define SIM808_RX_PIN 13
+        
+        // Pin definitions
+        const int mq2Pin = A0; // Analog pin connected to MQ2 sensor
+        const int vent=0;// analog pin for ventilateur
+        const int ledPin =11;  // Digital pin connected to the LED
+        const int buzzerPin = 10; // Digital pin connected to the buzzer
+        const int ROW_NUM = 4; //four rows
+        const int COLUMN_NUM = 4; //four columns
+        
+        char keys[ROW_NUM][COLUMN_NUM] = {
+          {'1','2','3', 'A'},
+          {'4','5','6', 'B'},
+          {'7','8','9', 'C'},
+          {'+','0','#', 'D'}
+        };
+        
+        // Create a SoftwareSerial object for communication with the SIM808 module
+        SoftwareSerial sim808(SIM808_TX_PIN, SIM808_RX_PIN);
+        
+        // Threshold for gas detection
+        int gasThreshold = 300;
+        char * num=NULL;
+        byte pin_rows[ROW_NUM] = {9, 8, 7, 6}; //connect to the row pinouts of the keypad
+        byte pin_column[COLUMN_NUM] = {5, 4, 3, 2}; //connect to the column pinouts of the keypad
+        LiquidCrystal_I2C lcd(0x27, 16, 2); // I2C address 0x27, 16 columns and 2 rows
+        Keypad keypad = Keypad( makeKeymap(keys), pin_rows, pin_column, ROW_NUM, COLUMN_NUM );
+        
+        const int EEPROM_SIZE = EEPROM.length();
+        int i = 2; // ##############
+        
+        void sendSMS(char* num, String message) {
+          // Set the phone number to which you want to send the SMS
+          Serial.print("Sending SMS to: ");
+          Serial.println(num);
+          sim808.print("AT+CMGS=\"");
+          sim808.print(num);
+          sim808.println("\"");
+        
+          // Wait for ">" character to indicate that SIM808 is ready to accept the message
+          Serial.println("Waiting for SIM808 to be ready…");
+          while (sim808.read() != '>') {
+            delay(100);
+          }
+          Serial.println("SIM808 is ready!");
+        
+          // Send the message
+          Serial.println("Sending message...");
+          sim808.print(message);
+          delay(100);
+          sim808.write(26); // Send CTRL+Z to indicate the end of the message
+          Serial.println("Message sent!");
+          delay(1000);
+        }
+        
+        void makeCall(char* num) {
+          // Set the phone number to which you want to make the call
+          Serial.print("Calling: ");
+          Serial.println(num);
+          sim808.print("ATD");
+          sim808.print(num);
+          sim808.println(";");
+        
+          // Wait for a few seconds for the call to initiate
+          delay(40000); // Adjust the delay as necessary
+        }
+        
+        void writeTextToEEPROM(const char* text) {
+          int textLength = strlen(text);
+          
+          // Check if the text fits in EEPROM
+          if (textLength + 1 > EEPROM_SIZE) { // +1 for the null terminator
+            Serial.println("Text is too large to fit in EEPROM.");
+            return;
+          }
+        
+          // Write text to EEPROM
+          for (int i = 0; i < textLength; i++) {
+            EEPROM.write(i, text[i]);
+          }
+        
+          // Write null terminator
+          EEPROM.write(textLength, '\0');
+          num=text;
+        }
+        
+        void readTextFromEEPROM() {
+          char text[EEPROM_SIZE];
+          int i = 0;
+        
+          // Read text from EEPROM until we hit the null terminator or the end of EEPROM
+          while (i < EEPROM_SIZE) {
+            char c = EEPROM.read(i);
+            if (c == '\0') break;
+            text[i] = c;
+            i++;
+          }
+          text[i] = '\0'; // Null-terminate the string
+          num=text;
+          lcd.print(text);
+        }
+        
+        int j=2; // ###############""
+        
+        char* getTextFromKeypad() {
+          static char text[100]; // static so that it retains value between function calls
+          static int i = 0; // static so that it retains value between function calls
+          char key = keypad.getKey();
+          
+          if (key) {
+            if(key != '#'){
+              text[i] = key;
+              i++;
+            }
+            lcd.setCursor(j,1);
+            if(key == '#'){
+              lcd.setCursor(j-1,1);
+              lcd.print(" ");
+              i = i-1;
+              j = j-2;
+            }
+            j++;
+            if(key != '#' && key != 'D'){
+              lcd.print(key);
+            }
+            if (key == 'D') {
+              text[i-1] = '\0'; // Null-terminate the string
+              i = 0; // Reset for next input
+              return text; // Return the collected text
+            }
+          }
+          return NULL; // No complete text yet
+        }
+        
+        // Function to check gas level and take action
+        void checkGasLevel(int value) {
+          if (value < gasThreshold) {
+            digitalWrite(ledPin, HIGH); // Turn on the LED
+            tone(buzzerPin, 1000); // Turn on the buzzer with a frequency of 1000Hz
+            digitalWrite(vent,HIGH);
+            lcd.setCursor(0, 1);
+            lcd.print("ALERT! Gas Det!");
+            
+            // Initialize communication with the SIM808 module
+            sim808.begin(9600);
+            delay(1000);
+        
+            // Set SIM808 to text mode
+            sim808.println("AT+CMGF=1");
+            delay(1000);
+        
+            Serial.println("Sending SMS...");
+            sendSMS("+212630387509", "Gaz Detected\nGaz Detected\nGaz Detected\n\nWARNNING");
+            Serial.println("SMS sent!");
+        
+            // Wait for 1 min before sending another SMS
+            delay(20000);
+        
+            // Make a call
+            Serial.println("Making a call...");
+            makeCall(num);
+            Serial.println("Call made!");
+          } else {
+            digitalWrite(ledPin, LOW); // Turn off the LED
+            noTone(buzzerPin); // Turn off the buzzer
+            digitalWrite(vent,LOW);
+          }
+        }
+        
+        // Function to calibrate the sensor
+        void calibrateSensor() {
+          int calibrationValue = 0;
+          for (int i = 0; i < 100; i++) {
+            calibrationValue += analogRead(mq2Pin);
+            delay(10);
+          }
+          calibrationValue /= 100;
+          gasThreshold = calibrationValue + 50; // Set the threshold slightly above the baseline
+          Serial.print("Calibrated Threshold: ");
+          Serial.println(gasThreshold);
+          if(gasThreshold<120){
+              calibrateSensor();}
+        }
+        
+        // Function to display gas level on the LCD
+        void displayGasLevel(int value) {
+          lcd.clear();
+          lcd.setCursor(0, 0);
+          lcd.print("Gas Value: ");
+          lcd.setCursor(0, 1);
+          lcd.print(value);
+        }
+        
+        void setup() { 
+          Serial.begin(9600); // Start serial communication for debugging
+          lcd.begin();
+          lcd.backlight();
+          // Display initial message
+          lcd.setCursor(0, 0);
+          lcd.print("Gas Detector");
+          lcd.setCursor(0, 1);
+          lcd.print("Initializing...");
+          delay(2000); // Wait for 2 seconds
+          lcd.clear();
+          pinMode(mq2Pin, INPUT);
+          pinMode(vent, OUTPUT);
+          pinMode(ledPin, OUTPUT);
+          pinMode(buzzerPin, OUTPUT);
+          calibrateSensor();
+          char key;
+          char* temp = NULL;
+        
+          while (temp == NULL) {
+            lcd.setCursor(0, 0);
+            lcd.print("A->NUM  , B->REG");
+            lcd.setCursor(3,1);
+            lcd.print("C->DESPLAY:");
+            key = keypad.getKey();
+            //Serial.println(key);
+        
+            if (key == 'A') {
+              lcd.clear();
+              lcd.setCursor(0, 0);
+              lcd.print("Enter ur number");
+              lcd.setCursor(0, 1);
+              lcd.print("->");
+              
+              // Get text input from keypad
+              char* result = NULL;
+              while (result == NULL) {
+                result = getTextFromKeypad();
+              }
+              
+              // Write to EEPROM
+              if (result != NULL) 
+                writeTextToEEPROM(result);
+              
+              // Read from EEPROM and display on LCD
+              lcd.clear();
+              lcd.print("Stored Text:");
+              readTextFromEEPROM();
+            } 
+            else if (key == 'C') {
+              // Exit loop if 'C' is pressed
+              lcd.clear();
+              lcd.setCursor(0,0);
+              lcd.print("ur number is :");
+              lcd.setCursor(0,1);
+              readTextFromEEPROM();
+              delay(3000);
+              lcd.clear();
+        
+              //break;
+            }
+            else if (key == 'D'){
+              lcd.clear();
+              readTextFromEEPROM();
+              Serial.print(num);
+              break;
+            }
+          }
+        }
+        
+        void loop() {
+          int gasValue = analogRead(mq2Pin); // Read the value from the MQ2 sensor
+          Serial.println(gasValue); // Print the value to Serial Monitor
+        
+          displayGasLevel(gasValue); // Display the gas value on the LCD
+        
+          checkGasLevel(gasValue); // Check the gas level and act accordingly
+        
+          delay(1000); // Wait for 1 second before the next reading
+        }
+       " ]]>
+    </string>
+    <string name="staff_image_description">Staff Image</string>
+</resources>
